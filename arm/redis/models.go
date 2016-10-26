@@ -167,7 +167,7 @@ type Properties struct {
 	RedisConfiguration *map[string]*string `json:"redisConfiguration,omitempty"`
 	EnableNonSslPort   *bool               `json:"enableNonSslPort,omitempty"`
 	TenantSettings     *map[string]*string `json:"tenantSettings,omitempty"`
-	ShardCount         *int32              `json:"shardCount,omitempty"`
+	ShardCount         *string             `json:"shardCount,omitempty"`
 	SubnetID           *string             `json:"subnetId,omitempty"`
 	StaticIP           *string             `json:"staticIP,omitempty"`
 }
@@ -179,7 +179,7 @@ type ReadableProperties struct {
 	RedisConfiguration *map[string]*string `json:"redisConfiguration,omitempty"`
 	EnableNonSslPort   *bool               `json:"enableNonSslPort,omitempty"`
 	TenantSettings     *map[string]*string `json:"tenantSettings,omitempty"`
-	ShardCount         *int32              `json:"shardCount,omitempty"`
+	ShardCount         *string             `json:"shardCount,omitempty"`
 	SubnetID           *string             `json:"subnetId,omitempty"`
 	StaticIP           *string             `json:"staticIP,omitempty"`
 	ProvisioningState  *string             `json:"provisioningState,omitempty"`
@@ -196,7 +196,7 @@ type ReadablePropertiesWithAccessKey struct {
 	RedisConfiguration *map[string]*string `json:"redisConfiguration,omitempty"`
 	EnableNonSslPort   *bool               `json:"enableNonSslPort,omitempty"`
 	TenantSettings     *map[string]*string `json:"tenantSettings,omitempty"`
-	ShardCount         *int32              `json:"shardCount,omitempty"`
+	ShardCount         *string             `json:"shardCount,omitempty"`
 	SubnetID           *string             `json:"subnetId,omitempty"`
 	StaticIP           *string             `json:"staticIP,omitempty"`
 	ProvisioningState  *string             `json:"provisioningState,omitempty"`
